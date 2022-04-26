@@ -1,0 +1,895 @@
+:root {
+    --color__one: rgb(1, 102, 156);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color:rgb(218, 219, 219);
+}
+
+#arrow_up {
+    width: 30px;
+    border-radius: 50px;
+}
+
+main {
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.mainLogo {
+    display: flex;
+    border-bottom: 2px solid var(--color__one);
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    
+}
+
+#logo {
+    width: 300px;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.number__city,
+.number__phone {
+    margin: 3px;
+}
+
+.number__button {
+    cursor: pointer;
+    width: 125px;
+    height: 30px;
+    margin-bottom: 10px;
+
+    background-color: var(--color__one);
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+}
+
+.number__button--text {
+    color: white;
+    display: flex;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0% 29%;
+}
+
+.about__calendar,
+.about__price,
+.about__faq {
+    border-right: 2px solid var(--color__one);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 0px;
+    padding-right: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about__contacts {
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+span {
+    font-size: 18px;
+    font-family: 'Arial Обычный', 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Arial Обычный', 'Arial', sans-serif;
+}
+
+a:hover {
+    color: var(--color__one);
+}
+
+.calendar__heading {
+    margin-bottom: 15px;
+}
+
+#calendar__heading--text {
+    font-family: 'Arial Обычный', 'Arial', sans-serif;
+    margin: 0px;
+}
+
+.calendar__data {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar__data--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calendar__data--right {
+    
+}
+
+.googleformCalendar {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.googleformCalendar__img {
+    width: 697px;
+    margin-bottom: 5px;
+}
+
+.itemCalendar {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.imgCalendar__img {
+    width: 40px;
+}
+
+.textCalendar {
+    padding-left: 5px;
+}
+
+.buttonCalendar {
+    margin-top: 15px;
+}
+
+.buttonCalendar__button {
+    color: white;
+    background-color: var(--color__one);
+
+    width: 276px;
+    height: 56px;
+
+    border: 1px solid grey;
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.googleformCalendar__img {
+    width: 90%;
+}
+
+.googleformCalendar__button {
+    color: white;
+    background-color: var(--color__one);
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    font-weight: 600;
+
+    width: 397px;
+    height: 49px;
+    padding: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.googleformCalendar__button--img {
+    width: 12%;
+}
+
+.googleformCalendar__button--text {
+    font-size: 14px;
+}
+
+.calendarFooter {
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 40px;
+}
+
+.calendarFooter__item {
+    display: flex;
+    align-items: center;
+}
+
+.calendarFooter__item--img {
+    width: 51px;
+    height: 47px;
+}
+
+.calendarFooter__text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+}
+
+.price {
+    margin-top: 75px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.price__heading {
+    font-weight: 700px;
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.price__report {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.price__report--block {
+    display: flex;
+    flex-direction: column;
+}
+
+.price__report--text {
+    display: flex;
+    justify-content: center;
+}
+
+.price__report--img {
+    margin-bottom: 5px;
+}
+
+.price__education {
+    margin-top: 10px;
+    
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__education--block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.price__education--text,
+.price__education--header,
+.price__education--costs {
+    display: flex;
+    justify-content: center;
+}
+
+.price__education--header {
+    padding-top: 5px;
+
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+}
+
+.price__education--costs {
+    padding: 5px 0px;
+
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+
+    color: #aaaaaa;
+}
+
+.price__education--text {
+    padding: 2px 0px;
+}
+
+.eventHead {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+#eventHead {
+    color: #aaaaaa;
+}
+
+.event__program--header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0px;
+
+    font-size: 30px;
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+}
+
+#event__program {
+    display: flex;
+    justify-content: space-between;
+}
+
+#clock_black {
+    width: 66px;
+}
+
+.event__program--block {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 50px;
+}
+
+.event__program--about {
+    display: flex;
+}
+
+.event__program--text {
+    margin-left: 10px;
+}
+
+#event__program--text {
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#event__program--time {
+    color: rgb(127, 127, 127);
+
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#event__program--about {
+    margin-top: 10px;
+}
+
+.event__program--form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#calendar_black {
+    width: 33px;
+}
+
+.event__program--form {
+    border: 1px solid var(--color__one);
+
+    margin-top: 30px;
+}
+
+.event__program--calendar {
+    flex-direction: column;
+    display: flex;
+
+    padding: 10px;
+}
+
+#event__program--calendar {
+    display: flex;
+    align-items: center;
+}
+
+#event__program--date {
+    margin-left: 15px;
+
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#event__program--data {
+    margin-top: 20px;
+}
+
+.event__program--button {
+    background-color: var(--color__one);
+    color: white;
+
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
+    font-weight: 700;
+
+    width: 222px;
+    height: 59px;
+
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#placeselect {
+    width: 231px;
+}
+
+.specialist {
+    margin-top: 50px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.specialist__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specialist__header--header {
+    font-size: 30px;
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+}
+
+.specialist__header--text {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+#specialist__header--textTwo {
+    margin-top: 20px;
+}
+
+.specialist__form {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.specialist__form--block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.specialist__form--text {
+    margin: 10px 0px;
+
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.specialist__form--button {
+    width: 249px;
+    height: 59px;
+
+    background-color: var(--color__one);
+    color: white;
+
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#imgCollege,
+#imgBachelor,
+#imgMagistrate {
+    width: 357px;
+}
+
+#firstForm,
+#secondForm,
+#thirdForm {
+    border: 5px solid var(--color__one);
+}
+
+#thirdForm {
+}
+
+.specialist__result--none {
+    display: none;
+}
+
+.specialist__result--text {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.specialist__result--about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Arial Обычный', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.specialist__result--header {
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
+    font-weight: 700;
+}
+
+.specialist__result--button {
+    background-color: var(--color__one);
+    color: white;
+
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    width: 386px;
+    height: 74px;
+
+    margin: 10px 33% 20px 33%;
+
+    cursor: default;
+}
+
+.specialist__result--btn {
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.steps {
+    margin-top: 50px;
+}
+
+.steps__head,
+.steps__header {
+    justify-content: center;
+    display: flex;
+}
+
+.steps__header {
+    margin: 25px 0px;
+}
+
+.steps__head--text {
+    color: rgb(127, 127, 127);
+
+    font-family: "Arial Обычный", Arial, sans-serif;
+    font-weight: 400;
+}
+
+.steps__header--text {
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px
+}
+
+.success{ 
+    margin-top: 50px; 
+} 
+.block_theme{ 
+    width: 100%; 
+    border: 1px solid black; 
+    height: 260px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+
+    transition: 750ms;
+}
+
+#blockOne {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block_one:hover{ 
+    height: 300px; 
+} 
+.block_two:hover{ 
+    height: 350px; 
+} 
+.block_three:hover{ 
+    height: 400px; 
+} 
+.block_four:hover{ 
+    height: 450px; 
+} 
+.block_five:hover{ 
+    height: 500px; 
+} 
+.block_theme-title{ 
+    margin-top: 30px; 
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif; 
+    font-weight: 700; 
+    font-size: 18px; 
+    text-align: center; 
+} 
+.block_theme-text{ 
+    font-weight: 400; 
+    font-size: 15px; 
+    letter-spacing: normal; 
+    color: rgb(51, 51, 51); 
+    text-align: center; 
+    margin-top: 30px; 
+} 
+.special{ 
+    height: 500px; 
+    display: flex; 
+} 
+.special__theme{ 
+    display: flex; 
+    align-items: flex-end; 
+} 
+.block_theme-btn{ 
+    margin-top: 30px; 
+} 
+.success__title{ 
+ 
+}
+
+.block_theme-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background-color: var(--color__one);
+
+    width: 137px;
+    height: 33px;
+
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    margin-top: 20px;
+}
+
+.block_theme-button:hover {
+    color: white;
+}
+
+.aboutUniversity {
+    margin-top: 50px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUniversity__head {
+    color: rgb(127, 127, 127);
+
+    font-family: "Arial Обычный", Arial, sans-serif;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUniversity__header {
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+
+    margin: 25px 0px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUniversity__img {
+    width: 1114px;
+    height: 289px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUniversity__block {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
+
+.aboutUniversity__block--img {
+    width: 71px;
+    height: 47px;
+}
+
+.aboutUniversity__block--info {
+
+}
+
+.aboutUniversity__block--text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutUniversity__block--header {
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aboutUniversity__video {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 600px;
+}
+
+.aboutUniversity__video--header {
+    font-size: 36px;
+    font-family: "Arial Обычный", Arial, sans-serif;
+    font-weight: 400;
+}
+
+.aboutUniversity__video--text {
+    margin: 25px 0px;
+
+    font-family: "Arial Обычный", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.aboutUniversity__video--video {
+    width: 90%;
+    height: 70%;
+}
+
+.teacher {
+    flex-direction: column;
+    display: flex;
+}
+
+.teacher__header {
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.teacher__text {
+    text-align: center;
+}
+
+.teacher__director {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.teacher__director--img {
+    width: 538px;
+    height: 242px;
+}
+
+.teacher__director--info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.teacher__director--header {
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.teacher__director--text {
+    font-size: 20px;
+}
+
+#teacher__teachers {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 25px;
+}
+
+.teacher__teachers {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.teacher__teachers--img {
+    width: 333px;
+    height: 343px;
+}
+
+.teacher__teachers--header {
+    margin: 25px 0px;
+
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
+    font-weight: 700;
+}
