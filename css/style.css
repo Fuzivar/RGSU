@@ -120,7 +120,8 @@ img {
     padding-bottom: 10px; 
 }
 
-span {
+span,
+p {
     font-size: 18px;
     font-family: 'Arial Обычный', 'Arial', sans-serif;
 }
@@ -275,6 +276,8 @@ a:hover {
 
     display: flex;
     justify-content: center;
+
+    margin-bottom: 30px;
 }
 
 .price__report {
@@ -295,12 +298,11 @@ a:hover {
 }
 
 .price__report--img {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .price__education {
     margin-top: 10px;
-    
 
     display: flex;
     justify-content: space-between;
@@ -892,4 +894,566 @@ a:hover {
 
     font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
     font-weight: 700;
+}
+
+.slider{ 
+    max-width: 90%; 
+    position: relative; 
+    margin: auto; 
+    height: 300px; 
+    margin-bottom: 15px; 
+} 
+.item{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+/* Картинка маштабируется по отношению к родительскому элементу */ 
+.training{ 
+    height: 1100px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    padding-bottom: 100px; 
+    padding-top: 100px;
+} 
+
+.title {
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+}
+
+.training__text{ 
+    height: 100%; 
+} 
+/* Собственно сам слайдер */ 
+.slider{ 
+    max-width: 90%; 
+    position: relative; 
+    margin: auto; 
+    margin-bottom: 15px; 
+} 
+/* Картинка мастабируется по отношению к родительскому элементу */ 
+.slider .item img { 
+    object-fit: cover; 
+    width: 100%; 
+    height: 500px; 
+    border: none !important; 
+    box-shadow: none !important; 
+} 
+/* Кнопки вперед и назад */ 
+.slider .prev, .slider .next { 
+    cursor: pointer; 
+    position: absolute; 
+    top: 0; 
+    top: 70%; 
+    margin-left: -80px; 
+    margin-right: -80px; 
+    width: auto; 
+    margin-top: 150px; 
+    padding: 16px; 
+    color: black; 
+    font-weight: bold; 
+    font-size: 100px;
+    border-radius: 0 3px 3px 0;
+}
+
+.slider .next { 
+    right: 0; 
+    border-radius: 3px 0 0 3px; 
+} 
+/* Заголовок слайда */ 
+.slideText{ 
+    position: absolute; 
+    color: #fff; 
+    font-size: 35px; 
+    /* Выравнивание текста по горизонтали и по вертикали*/ 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    /* Тень*/ 
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000; 
+} 
+/* Кружочки */ 
+.slider-dots{ 
+    display: flex; 
+    justify-content: space-around; 
+    text-align: center; 
+    border-bottom: 15px solid var(--color__one); 
+    padding-bottom: 20px; 
+    margin-bottom: 70px; 
+} 
+.slider-dots_item{ 
+    font-weight: 700; 
+    font-style: normal; 
+    font-size: 36px; 
+    color: #AAAAAA; 
+    cursor: pointer; 
+} 
+.active{ 
+    color: var(--color__one); 
+} 
+/* Анимация слайдов */ 
+.slider .item { 
+    -webkit-animation-name: fade; 
+    -webkit-animation-duration: 1.5s; 
+    animation-name: fade; 
+    animation-duration: 1.5s; 
+} 
+@-webkit-keyframes fade { 
+    from { 
+        opacity: .4 
+    } 
+    to { 
+        opacity: 1 
+    } 
+} 
+@keyframes fade { 
+    from { 
+        opacity: .4 
+    } 
+    to { 
+        opacity: 1 
+    } 
+} 
+ 
+.training__p{ 
+    text-align: center; 
+    font-size: 18px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+} 
+ 
+.training__text{ 
+    font-size: 20px; 
+} 
+.item__pic{ 
+    position: absolute; 
+} 
+.training__h2{ 
+    font-size: 35px; 
+    text-align: center; 
+    padding-bottom: 20px;   
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+}
+
+.choice__head {
+    color: rgb(127, 127, 127);
+
+    font-family: "Arial Обычный", Arial, sans-serif;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+}
+
+.choice__header {
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+
+    margin: 30px 0px;
+}
+
+.choice__slider {
+    position: relative; 
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.choice__slider--block {
+    display: flex;
+    align-content: space-between;
+    padding: 20px;
+
+    width: 1000px;
+    height: 350px;
+}
+
+.choice__slider--left {
+
+}
+
+.choice__slider--right {
+    flex-direction: column;
+    display: flex;
+
+    margin-left: 20px;
+}
+
+.choice__slider--img {
+    width: 518px;
+    height: 320px;
+}
+
+.choice__slider--pic {
+    width: 29px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.choice__slider--pic:hover {
+    width: 40px;
+    transition: 300ms;
+}
+
+.choice__slider--header {
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.choice__slider--name {
+    font-size: 28px;
+}
+
+.choice__slider--date {
+    margin-bottom: 20px;
+}
+
+.choice__slider--text {
+    font-family: "Arial Курсив", "Arial Обычный", Arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.achievements__text {
+    color: rgb(127, 127, 127);
+
+    font-family: "Arial Обычный", Arial, sans-serif;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.achievements__header {
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.achievements__slider {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.achievements__slider--block {
+    justify-content: space-between;
+    width: 1000px;
+    height: 410px;
+}
+
+.achievements__slider--left,
+.achievements__slider--right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.achievements__slider--img {
+    width: 414px;
+    height: 249px;
+}
+
+.achievements__slider--text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.education {
+    margin-top: 50px;
+}
+
+.education__header {
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.education__block {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 12px 50px;
+}
+
+.education__block--img {
+    width: 113px;
+    height: 69px;
+}
+
+.education__block--text {
+    padding-left: 20px;
+}
+
+.faq {
+    margin-top: 50px;
+}
+
+.faq__header {
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 80px;
+}
+
+.faq__forms--container {
+    padding: 0px 2.5%;
+}
+
+.faq__forms--about {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--color__one);
+    padding: 20px;
+    margin: 0px;
+}
+
+.faq__forms--header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px
+}
+
+.faq__forms--img {
+    transform: rotate(90deg);
+    width: 20px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.faq__forms--img:hover {
+    width: 25px;
+    transition: 300ms;
+}
+
+.faq__forms--text {
+    padding: 15px;
+    margin: 0px 10px 5px 10px;
+    border: 2px solid var(--color__one);
+    border-top: 0px solid #000;
+
+    font-family: "Arial Обычный", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.question {
+    border: 1px solid var(--color__one);
+    padding: 25px;
+    margin: 50px 27px 60px 27px;
+    height: 400px;
+}
+
+.question__header {
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+
+    margin: 30px 0px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.question__form {
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 150px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#inputName,
+#inputPhone {
+    font-family: "Arial Обычный", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+    width: 355px;
+    height: 40px;
+
+    border: 0px solid white;
+    border-bottom: 2px solid #000;
+
+    margin: 15px 0px;
+}
+
+#inputName:focus,
+#inputPhone:focus {
+    outline: 0px;
+    outline-offset: 0px;
+}
+
+#inputAccept {
+    width: 16px;
+    height: 16px;
+}
+
+.inpAccept {
+    border-radius: 3px;
+}
+
+.question__form--accept {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+
+}
+
+#inputAccept {
+    cursor: pointer;
+    margin: 0px;
+}
+
+.question__form--text {
+    font-family: "Arial Обычный", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+
+    padding-left: 5px;
+
+    color: #7F7F7F;
+}
+
+.question__form--btn {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+
+}
+
+.question__form--button {
+    color: white;
+    
+    width: 200px;
+    height: 40px;
+
+    font-family: "Arial Полужирный", "Arial Обычный", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    cursor: default;
+}
+
+.question__form--button:hover {
+    color: white;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+
+    height: auto;
+    width: auto;
+}
+
+.contacts__left {
+    height: auto;
+    width: auto;    
+}
+
+.contacts__right {
+    margin-left: 20px;
+
+    flex-direction: column;
+    display: flex;
+}
+
+.contacts__right--header {
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
+    font-weight: 700;
+
+    font-size: 36px;
+
+    margin-bottom: 50px;
+}
+
+.contacts__right--span,  .contacts__right--span a{
+    font-family: 'Arial Обычный', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.contacts__right--span {
+    margin-bottom: 30px;
+}
+
+.footer {
+    border-top: 7px solid var(--color__one);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 30px 20px;
 }
